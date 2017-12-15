@@ -1,0 +1,6 @@
+ul
+  - @calls.find_each do |call|
+    li
+      h4 #{hide_number call.from} called #{hide_number call.to}
+      - unless call.message_record_url.nil?
+        = audio_tag call.message_record_url, controls: true

@@ -26,3 +26,6 @@ Bundler/OrderedGems:
 
 Style/Documentation:
   Enabled: false
+
+Layout/EmptyLinesAroundBlockBody:
+  Enabled: false

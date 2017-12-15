@@ -16,8 +16,16 @@ ActiveRecord::Schema.define(version: 20170719183956) do
   enable_extension "plpgsql"
 
   create_table "calls", force: :cascade do |t|
+    t.string "sid"
+    t.string "from"
+    t.string "to"
+    t.string "message_record_url"
+    t.integer "duration", default: 0
+    t.integer "message_duration", default: 0
+    t.integer "status", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["sid"], name: "index_calls_on_sid", unique: true
   end
 
 end

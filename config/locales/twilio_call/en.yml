@@ -1,0 +1,8 @@
+fr:
+  twilio_call:
+    response:
+      welcome: "Hello, welcome on my interactive voice response"
+      ask_for_a_digit: "To call me, please press 1. To leave a voicemail, please press 2"
+      trying_to_call: "We are currently calling"
+      registering: "Please leave me a message"
+      unknown_action: "We didn't understand your asking"

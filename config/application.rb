@@ -13,8 +13,9 @@ module BackendTest4
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
 
-    # Settings in config/environments/* take precedence over those specified here.
-    # Application configuration should go into files in config/initializers
-    # -- all .rb files in that directory are automatically loaded.
+    config.i18n.default_locale = :fr
+    config.i18n.load_path += Dir[File.join('config', 'locales', '**', '*.{rb,yml}')]
+
+    Rails.application.routes.default_url_options[:host] = ENV.fetch('APPLICATION_HOST')
   end
 end

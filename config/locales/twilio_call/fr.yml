@@ -1,0 +1,8 @@
+fr:
+  twilio_call:
+    response:
+      welcome: "Bonjour, et bienvenue sur mon serveur vocal interractif"
+      ask_for_a_digit: "Pour m'appeler, appuyez sur la touche 1. Pour laisser un message, appuyez sur la touche 2"
+      trying_to_call: "L'appel est en cours"
+      registering: "Veuillez laisser un message"
+      unknown_action: "Nous n'avons pas compris votre demande"
