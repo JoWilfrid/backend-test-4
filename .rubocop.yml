@@ -1,0 +1,28 @@
+AllCops:
+  DisplayCopNames: true
+  TargetRubyVersion: 2.4
+  Exclude:
+    - bin/*
+    - db/migrate/*
+    - db/schema.rb
+
+# And/Or is actually quite cool. But they shouldn't be used as && - ||
+# Read about it: http://www.virtuouscode.com/2010/08/02/using-and-and-or-in-ruby/
+# Using 'and' at the right place makes for some sexy, readable code.
+AndOr:
+  Enabled: false
+
+# Double negation ain't bad, it's used in numerous languages.
+# Sometimes you really do want the boolean value of a variable
+Style/DoubleNegation:
+  Enabled: false
+
+Metrics/LineLength:
+  Enabled: true
+  Max: 110
+
+Bundler/OrderedGems:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
